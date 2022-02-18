@@ -9,7 +9,28 @@
 /***** Title *******/
 
 h1 {
-	/* Text */
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	/* identical to box height */
+	color: #121417;
+}
+
+h2{
+	font-family: 'DM Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 117%;
+	/* or 37px */
+	letter-spacing: -0.03em;
+	color: #606060;
+	text-align: left;
+	margin-top: 100px;
+}
+
+h3{
 	font-family: 'DM Sans', sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -17,14 +38,8 @@ h1 {
 	line-height: 97.2%;
 	/* or 58px */
 	letter-spacing: -0.03em;
+	/* Main Black */
 	color: #181717;
-}
-
-h2,h3{
-	font-family: 'Rubik', sans-serif;
-	font-weight: bold;
-	text-align: center;
-	font-size: 25px;
 }
 
 /***** Paragraph *******/
@@ -35,6 +50,14 @@ p {
 	text-align: center;
 	font-family: 'DM Sans', sans-serif;
 	font-size: 16px;
+}
+
+.container .card .description{
+    position: relative;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 /***** Paragraphe - DIV *******/
@@ -49,97 +72,122 @@ p {
 
 /***** Header *******/
 
-.header{
+.main_head{
+	color: #181717;
+}
+
+a{
+	font-family: 'DM Sans', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	/* or 58px */
+	letter-spacing: -0.03em;
+	/* Main Black */
+	color: #181717;
+	text-decoration: none;
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	color: #181717;
+  }
+
+a:after {
+	content: '';
+	position: absolute;
 	width: 100%;
-	height: 80px;
-	display: block;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #181717;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+a:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }
 
-.inner_header{
-	width: 1350px;
-	height: 100%;
-	display: block;
-	margin: 0 auto;
-}
-
-.logo_container{
-	height: 100%;
-	display: table;
-	float: left;
-}
-
-.logo_container h1{
-	font-family: 'Rubik', sans-serif;
-	font-size: 35px;
-	height: 100%;
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.navigation {
-	margin: 0;
-	padding: 0;
+nav{
+	min-height: 10vh;
 	display: flex;
 	align-items: center;
-	height: 100%;
-	float: right;
-	height: 100%;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 80px;
+	padding: 2rem;
+}
+
+nav ul{
+	display: flex;
+	flex: 1 1 25rem;
+	justify-content: space-around;
+	align-items: center;
 	list-style: none;
 }
 
-.navigation a:last-child{
-	padding-right: 0;
-}
-
-.navigation a li{
-	height: 100%;
-	display: table-cell;
-	vertical-align: middle;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 16px;
-	color: aliceblue;
-}
-
-.navigation li a {
-	height: 100%;
-	display: table;
-	float: left;
-	padding: 0px 20px;
-	display: table-cell;
-	vertical-align: middle;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	color: aliceblue;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	border: none;
-	cursor: pointer;
-	overflow: hidden;
-	text-decoration: none;
+#logo{
+	flex: 2 1 40rem;
 }
 
 /***** Images *******/
 
 .container{
-	position: relative;
-	width: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	flex-direction: column;
-	width: 100%;
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
 .container .card{
-	position: relative;
-	max-width: 1000px;
-	margin: 200px 0px 0px 0px;
-	padding: 15px;
+    position: relative;
+    max-width: 1150px;
+    margin: 0px 0px 200px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/***** Footer *******/
+
+footer{
+	height: auto;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+
+.footer-content{
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	align-items: top;
+	flex-direction: column;
+}
+
+.footer-content h2{
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	/* identical to box height */
+	color: #121417;
+	margin-bottom: 10px;
+}
+
+.footer-content p {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
 }
 
 /***** Images - Texte *******/
@@ -150,8 +198,8 @@ p {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 121.5%;
-	text-align: left;
 	margin: 0px 50px 10px 0px;
+	text-align: left;
 	/* or 22px */
 	letter-spacing: -0.03em;
 	/* Main Black */
@@ -164,8 +212,8 @@ p {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 121.5%;
-	text-align: left;
 	margin: 0px 0px 0px 0px;
+	text-align: left;
 	/* or 22px */
 	letter-spacing: -0.03em;
 	/* Main Black */
@@ -190,17 +238,25 @@ p {
 .container .card .imgBx{
 	max-width: 720px;
 	flex: 0 0 600px;
-	margin: 0px 50px 0px 0px;
+	margin: 0px 0px 0px 50px;
 }
 
 .container .card .imgBx img{
 	max-width: 100%;
+	border-radius: 20px;
+}
 
+.container .card .imgBx img { 
+	transition: all .2s ease-in-out; 
+}
+
+.container .card .imgBx img:hover { 
+    transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container .card .content{
 	margin-left: 15px;
-
 }
 
 @media (max-width: 991px){
