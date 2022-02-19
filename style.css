@@ -6,6 +6,40 @@
 	background-color: #F3F3F3;
 }
 
+hr{  
+	width: 50%;
+	height: 2px;
+	background-color: #606060;
+	margin-bottom: 7px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 150px;
+}  
+
+/***** Google Fonts - Icon *******/
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v125/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+  .material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 65px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+}
+
 /***** Title *******/
 
 h1 {
@@ -21,7 +55,7 @@ h2{
 	font-family: 'DM Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 32px;
+	font-size: 42px;
 	line-height: 117%;
 	/* or 37px */
 	letter-spacing: -0.03em;
@@ -52,12 +86,29 @@ p {
 	font-size: 16px;
 }
 
-.container .card .description{
+.container .card_desc .description{
     position: relative;
-    margin: 0px 0px 20px 0px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.container .card_desc{
+    position: relative;
+    max-width: 1150px;
+    margin: 0px 0px 50px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .card .description .material-icons-outlined{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+	text-align: left;
 }
 
 /***** Paragraphe - DIV *******/
@@ -124,7 +175,7 @@ nav{
 
 nav ul{
 	display: flex;
-	flex: 1 1 25rem;
+	flex: 1 1 30rem;
 	justify-content: space-around;
 	align-items: center;
 	list-style: none;
@@ -150,7 +201,27 @@ nav ul{
 .container .card{
     position: relative;
     max-width: 1150px;
-    margin: 0px 0px 200px 0px;
+    margin: 0px 0px 150px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .card .description_icon{
+    position: relative;
+    max-width: 1150px;
+    margin: 0px 0px 0px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .card_footer{
+    position: relative;
+    max-width: 1150px;
+    margin: 0px 0px 50px 0px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -246,8 +317,8 @@ footer{
 	border-radius: 20px;
 }
 
-.container .card .imgBx img { 
-	transition: all .2s ease-in-out; 
+.container .card .imgBx img {
+	transition: all .2s ease-in-out;
 }
 
 .container .card .imgBx img:hover { 
