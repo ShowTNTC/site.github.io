@@ -16,6 +16,21 @@ hr{
 	margin-bottom: 150px;
 }  
 
+/***** Scrollbar *******/
+
+::-webkit-scrollbar{
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #AAAAAA;
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #555555;
+}
+
 /***** Google Fonts - Icon *******/
 
 @font-face {
@@ -175,7 +190,7 @@ nav{
 
 nav ul{
 	display: flex;
-	flex: 1 1 30rem;
+	flex: 1 40rem;
 	justify-content: space-around;
 	align-items: center;
 	list-style: none;
