@@ -1,0 +1,318 @@
+Boutton
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+Use the padding property to change the padding of a button:
+.button3 {padding: 14px 40px;}
+
+Use the border-radius property to add rounded corners to a button:
+.button5 {border-radius: 50%;}
+
+Use the border property to add a colored border to a button:
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+
+Use the :hover selector to change the style of a button when you move the mouse over it.
+
+Tip: Use the transition-duration property to determine the speed of the "hover" effect:
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+Disabled Buttons
+
+Use the opacity property to add transparency to a button (creates a "disabled" look).
+
+Tip: You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button:
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.box{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: aliceblue;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	display: flex;
+	justify-content: space-between;
+	transition: .5s;
+}
+
+
+.box{
+	position: relative;
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background: aliceblue;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	transition: .5s;
+}
+
+.box:hover{
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+.box .imgBx{
+	position: relative;
+	display: flex;
+	width: 150px;
+	flex: 0 0 150px;
+}
+
+.box .imgBx img{
+	max-width: 100%;
+}
+
+.box .content{
+	padding-left: 20px;
+}
+
+.box .content h2{
+	margin: 0;
+	padding-left: 0;
+	color: #101010;
+}
+
+.box .content p{
+	margin: 0;
+	padding: 10px 0 0;
+
+	color: #101010;
+}
+
+<div class="box">
+<div class="imgBx">
+    <img src="Images/Valideur_OPUS_Seul_TRansparent_2020-4.jpg">
+</div>
+<div class="content">
+    <h2>Valideur - ACS/Conduent</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officiis dignissimos quaerat minima reprehenderit in sunt alias nihil voluptatum velit id voluptatem reiciendis cum, impedit, temporibus doloremque similique facere dolores?</p>
+</div>
+</div>
+
+/***** Images *******/
+
+.container{
+	position: relative;
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container .card{
+	position: relative;
+	max-width: 450px;
+	background: #008CBA;
+	margin: 10px;
+	padding: 15px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.container .card .imgBx{
+	max-width: 150px;
+	flex: 0 0 150px;
+
+}
+
+.container .card .imgBx img{
+	max-width: 100%;
+
+}
+
+.container .card .content{
+	margin-left: 15px;
+
+}
+
+@media (max-width: 991px){
+	.container{
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px){
+	.container{
+		flex-direction: column;
+	}
+	.container .card{
+		flex-direction: column;
+		max-width: 350px;
+	}
+	.container .card .imgBx{
+		max-width: 100%;
+	}
+	.container .card .content{
+		margin-left: 0px;
+	
+	}
+}
+
+/***** HTML *******/
+
+<div class="container">
+<div class="card">
+    <div class="imgBx">
+        <img src="Images/Valideur_OPUS_Seul_TRansparent_2020-4.jpg">
+    </div>
+    <div class="content">
+        <h2>Conduent</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda veritatis officiis consectetur qui, magni architecto error similique vitae unde nulla officia perspiciatis totam, ut nostrum optio ipsa vero, consequuntur recusandae!</p>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+        <img src="Images/Valideur_OPUS_Seul_TRansparent_2020-4.jpg">
+    </div>
+    <div class="content">
+        <h2>Valideur - ACS Conduent</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda veritatis officiis consectetur qui, magni architecto error similique vitae unde nulla officia perspiciatis totam, ut nostrum optio ipsa vero, consequuntur recusandae!</p>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+        <img src="Images/Valideur_OPUS_Seul_TRansparent_2020-4.jpg">
+    </div>
+    <div class="content">
+        <h2>Sièges - Vogelsitze Pino 300</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda veritatis officiis consectetur qui, magni architecto error similique vitae unde nulla officia perspiciatis totam, ut nostrum optio ipsa vero, consequuntur recusandae!</p>
+    </div>
+</div>
+</div>
+
+<!-- Header -->
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<h1>Ago'Projects</h1>
+			</div>
+
+			<ul class="navigation">
+				<a href="">
+					<li><button>Portfolio</button></li>
+				</a>
+				<a href="https://agopro.wixsite.com/agoprojects">
+					<li><button>Ago'Projects</button></li>
+				</a>
+				<a href="https://www.youtube.com/channel/UC9dmgpJZCs324-pcpSOpS7Q">
+					<li><button>Youtube</button></li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	/***** Header *******/
+
+.header{
+	width: 100%;
+	height: 80px;
+	display: block;
+	margin-bottom: 85px;
+}
+
+.inner_header{
+	width: 1200px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo_container{
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.logo_container h1{
+	font-family: 'Rubik', sans-serif;
+	font-size: 35px;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.navigation {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	float: right;
+	height: 100%;
+	list-style: none;
+}
+
+.navigation a:last-child{
+	padding-right: 0;
+}
+
+.navigation a li{
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	color: aliceblue;
+}
+
+.navigation li a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	color: aliceblue;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+
+
+
+
+
+		<div class="logo">
+			<a href="#"><img src ="Images/Long_AgoProjects_Logo_Black.svg"></a>
+		</div>

@@ -268,12 +268,12 @@ nav ul{
 	color: #F3F3F3;
 }
 
-.button:visited:hover{
+.button:visited:hover, .button:link:hover{
 	text-decoration: none;
 	color: #F3F3F3;
 }
 
-.button:visited{
+.button:visited, .button:link{
 	text-decoration: none;
 	color: #121417;
 }

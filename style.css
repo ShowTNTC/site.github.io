@@ -40,7 +40,7 @@ hr{
 	src: url(https://fonts.gstatic.com/s/materialicons/v125/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
-  .material-icons {
+.material-icons {
 	font-family: 'Material Icons';
 	font-weight: normal;
 	font-style: normal;
@@ -57,7 +57,7 @@ hr{
 
 /***** Title *******/
 
-h1 {
+h1{
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -93,7 +93,7 @@ h3{
 
 /***** Paragraph *******/
 
-p {
+p{
 	margin-left: 50px;
 	margin-right: 50px;
 	text-align: center;
@@ -178,6 +178,11 @@ p {
 	transform-origin: bottom left;
 }
 
+a:visited, a:link{
+	text-decoration: none;
+	color: #121417;
+}
+
 nav{
 	min-height: 10vh;
 	display: flex;
@@ -241,19 +246,6 @@ nav ul{
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.button{
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 0px 0px 50px 0px;
-	cursor: pointer;
 }
 
 /***** Footer *******/
